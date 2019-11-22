@@ -1,6 +1,7 @@
 package com.com.example.model;
 
 public class CustomForm {
+
 	private int countryId;
 	private int cityId;
 

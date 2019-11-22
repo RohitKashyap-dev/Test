@@ -1,13 +1,14 @@
 package com.com.example.model;
 
 public class CountryCriteria {
-	 private int countryId;
 
-	 public int getCountryId() {
-	  return countryId;
-	 }
+	private int countryId;
 
-	 public void setCountryId(int countryId) {
-	  this.countryId = countryId;
-	 }
+	public int getCountryId() {
+		return countryId;
 	}
+
+	public void setCountryId(int countryId) {
+		this.countryId = countryId;
+	}
+}
