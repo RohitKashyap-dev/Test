@@ -1,9 +1,9 @@
-package com.com.example.model;
+package com.com.example.services;
 
 import java.util.List;
 
-import javax.persistence.Entity;
-
+import com.com.example.repository.CountryRepository;
+import com.com.example.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,4 +18,8 @@ public class CityService {
 	public List<City> getCitiesByCountry(int countryId) {
 		return cityDao.getCitiesByCountry(countryId);
 	}
+
+
+
+
 }
