@@ -1,15 +1,23 @@
 package com.com.example.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
+@Table(name = "city")
 public class City {
 
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "city_id")
 	private int id;
 
+	@Column(name = "city_name")
 	private String name;
+
+	@ManyToOne
+	@JoinColumn(name = "country_name")
+	private Country country;
+
 
 	public int getId() {
 		return id;
